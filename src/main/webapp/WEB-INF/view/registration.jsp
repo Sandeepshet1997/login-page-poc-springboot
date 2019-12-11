@@ -4,7 +4,7 @@
     String fname = request.getParameter("fname");
     String lname = request.getParameter("lname");
     String emp_id = request.getParameter("emp_id");
-    Class.forName("com.mysql.jdbc.Driver");
+    Class.forName("com.mysql.cj.jdbc.Driver");
     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root","root");
     Statement st = con.createStatement();
     //ResultSet rs;
